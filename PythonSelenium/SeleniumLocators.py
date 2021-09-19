@@ -5,6 +5,8 @@ from selenium.webdriver.common.keys import Keys
 # Locators
 # ID
 # Name
+from selenium.webdriver.support.select import Select
+
 ''' Xpath -> REGEX //*[contains(@attribute,'value')], 
                    //tagname[@attribute="value"]  *** tag name is optional *** '''
 
@@ -38,15 +40,22 @@ driver.find_element(By.CSS_SELECTOR, "input[name='email']").send_keys("aora@gmai
 
 driver.find_element(By.XPATH, "//input[@id='exampleInputPassword1']").send_keys("12345")  # XPATH
 
+dropdown = Select(driver.find_element(By.ID, "exampleFormControlSelect1"))
+
+dropdown.select_by_visible_text("Female")
+#dropdown.select_by_index(0)
+
 driver.find_element(By.ID, "exampleCheck1").click()  # ID
 
 driver.find_element(By.XPATH, "//input[@type='submit']").click()
 
-print(driver.find_element(By.CLASS_NAME, "alert-success").text)
+message = driver.find_element(By.CLASS_NAME, "alert-success").text
 # $("[class*='alert-success']") CSS REGEX Console Checking
 # $("[class='alert-success'") CSS Console Checking
 # $x("//*[contains(@class,'alert-success')]") XPATH REGEX Console Checking
 # $x("//div[@class='alert-success']") XPATH Console Checking
 
+assert "Success" in message # Check if present
+# assert "Success" == message -> Check the exact message
 
 # driver.close()

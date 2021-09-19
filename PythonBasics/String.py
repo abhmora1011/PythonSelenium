@@ -18,7 +18,7 @@ print(splitString[0])
 
 sample = " Great  "
 
-print(sample.strip())
+print(sample.strip()) #strip extra space in front and back, available lstrip and rstrip
 
 
 

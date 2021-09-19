@@ -23,7 +23,7 @@ print(temp)
 
 print("*******************")
 
-for ba in range(0, 11, 5):
+for ba in range(0, 11, 5): # The third parameter is the number of skip
     print(ba)
 
 
