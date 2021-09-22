@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.remote.webelement import getAttribute_js
 
 # Locators
 # ID
@@ -11,7 +12,8 @@ from selenium.webdriver.support.select import Select
                    //tagname[@attribute="value"]  *** tag name is optional *** '''
 
 ''' Generating XPATH based on text
-                  //tagname[text()='xxx'] (Can cover any tag) '''
+                  //*[contains(text(),'xxx')] (Can cover any tag) 
+                  //tagname[text()='<text here>']           '''
 
 ''' Creating Xpath and CSS by Traversing Tags
             xpath: ParentTag/ChildTag
