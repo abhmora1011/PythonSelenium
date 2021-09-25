@@ -22,11 +22,13 @@ print(listType[-1]) # Print last element
 
 print(listType[1:3]) # Print substring index 1 up to but included 3
 
-listType.insert(3, 'Hello') # inserting an item
+listType.insert(3, 'Hello') # inserting an item (update)
 
 listType.insert(2, 'Abe')
 
 del listType[2] # deleting an item
+
+# append() to add an element to a list
 
 print(listType) #
 
