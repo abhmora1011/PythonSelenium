@@ -2,8 +2,6 @@ import time
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.wait import WebDriverWait
 
 expected_vegetable = ["Brocolli - 1 Kg", "Beetroot - 1 Kg", "Carrot - 1 Kg", "Mushroom - 1 Kg"]
 actual_vegetable = []
