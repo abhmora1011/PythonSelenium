@@ -6,8 +6,9 @@
 # you can run specific file with py.test <filename>
 # fixture is used for setup
 # by using conftest.py file it will be possible to inherit the setup to all test file
-# datadriven and parameriterizartion can be done thru return statement in list format
+# datadriven and parameriterizartion can be done through return statement in list format
 # when you define fixture scope to class only, it will run once before class is initiated and at the end
+# to generate HTMl report run pytest --html=report.html
 import pytest
 
 
