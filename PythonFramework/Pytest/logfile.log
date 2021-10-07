@@ -1,0 +1,14 @@
+2021-10-07 12:56:10,415 : INFO : test_editProfile : Abraham
+2021-10-07 12:56:10,415 : INFO : test_editProfile : abraham.morial.ora@gmil.com
+2021-10-07 12:56:10,431 : DEBUG : PythonFramework.Pytest.test_logging : A debug statement is executed
+2021-10-07 12:56:10,431 : INFO : PythonFramework.Pytest.test_logging : Information statement is executed
+2021-10-07 12:56:10,431 : WARNING : PythonFramework.Pytest.test_logging : Something is in warning mode
+2021-10-07 12:56:10,432 : ERROR : PythonFramework.Pytest.test_logging : A major error has been occurred
+2021-10-07 12:56:10,432 : CRITICAL : PythonFramework.Pytest.test_logging : Critical issue found!
+2021-10-07 12:57:57,139 : INFO : test_editProfile : Abraham
+2021-10-07 12:57:57,140 : INFO : test_editProfile : abraham.morial.ora@gmil.com
+2021-10-07 12:57:57,151 : DEBUG : PythonFramework.Pytest.test_logging : A debug statement is executed
+2021-10-07 12:57:57,152 : INFO : PythonFramework.Pytest.test_logging : Information statement is executed
+2021-10-07 12:57:57,152 : WARNING : PythonFramework.Pytest.test_logging : Something is in warning mode
+2021-10-07 12:57:57,152 : ERROR : PythonFramework.Pytest.test_logging : A major error has been occurred
+2021-10-07 12:57:57,152 : CRITICAL : PythonFramework.Pytest.test_logging : Critical issue found!

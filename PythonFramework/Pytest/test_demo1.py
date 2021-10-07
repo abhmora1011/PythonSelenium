@@ -9,6 +9,7 @@
 # datadriven and parameriterizartion can be done through return statement in list format
 # when you define fixture scope to class only, it will run once before class is initiated and at the end
 # to generate HTMl report run pytest --html=report.html
+# -s is replaced by --capture=tee-sys
 import pytest
 
 
@@ -22,4 +23,5 @@ def test_secondProgram():
 
 
 def test_crossBrowser(crossBrowser):    # This will run 3 times
-    print(crossBrowser[1])
+    print(crossBrowser)
+
