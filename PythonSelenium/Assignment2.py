@@ -57,7 +57,7 @@ wait = WebDriverWait(driver, 10)
 
 list_of_countries = wait.until(EC.presence_of_element_located((By.LINK_TEXT, "India")))
 
-driver.find_element(By.LINK_TEXT, "India").click()
+list_of_countries.click()
 
 checkbox = driver.find_element(By.XPATH, "//div[@class='checkbox checkbox-primary']")
 
@@ -70,4 +70,6 @@ success = driver.find_element(By.CLASS_NAME, "alert-success").text
 assert "Success! Thank you!" in success
 
 driver.get_screenshot_as_file("screen.png")
+
+driver.quit()
 
